@@ -14,16 +14,21 @@ format:
 
 ## Follow Along
 
-**Live Presentation:** https://nate-layman.github.io/claude-code-demo/claude-code-presentation.html
+**Live Presentation:** https://nate-layman.github.io/claude-code-demo
 
 ---
 
 # What is Claude?
 
-- Anthropic's advanced AI assistant
-- Conversational AI for various tasks
-- General-purpose reasoning and text generation
-- Web-based chat interface
+::: {.center}
+**Anthropic's Advanced AI Assistant**
+
+Built for conversational AI across various tasks
+
+Excels at general-purpose reasoning and text generation
+
+Typically accessed through web-based chat interface
+:::
 
 ---
 
