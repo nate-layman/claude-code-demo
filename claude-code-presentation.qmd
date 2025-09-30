@@ -6,401 +6,338 @@ format:
   revealjs:
     theme: white
     transition: slide
-    background-transition: fade
-    highlight-style: github
+    transition-speed: default
+    controls: true
+    controls-layout: bottom-right
+    controls-back-arrows: visible
+    progress: true
+    slide-number: true
+    navigation-mode: linear
     self-contained: true
     embed-resources: true
+    center: true
+    menu: true
+    include-after-body:
+      text: |
+        <style>
+        .reveal .slide-number {
+          top: 20px !important;
+          bottom: auto !important;
+        }
+        .reveal .slide-menu-button {
+          top: 20px !important;
+          bottom: auto !important;
+        }
+        </style>
+css: |
+  .reveal .slides section {
+    text-align: center;
+  }
+  .reveal .slides section .column {
+    text-align: center;
+  }
 ---
 
 ## Follow Along
 
-**Live Presentation:** https://nate-layman.github.io/claude-code-demo
+**Slides:** [https://nate-layman.github.io/claude-code-demo](https://nate-layman.github.io/claude-code-demo)
+
+**GitHub Repo:** [https://github.com/nate-layman/claude-code-demo](https://github.com/nate-layman/claude-code-demo)
 
 ---
 
-# What is Claude?
-
-::: {.center}
-**Anthropic's Advanced AI Assistant**
-
-Built for conversational AI across various tasks
-
-Excels at general-purpose reasoning and text generation
-
-Typically accessed through web-based chat interface
-:::
-
----
-
-# Agentic vs Non-Agentic LLMs
+## Agentic vs Non-Agentic AI
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-## Non-Agentic AI
-**ChatGPT, Claude Chat, Gemini**
+### Non-Agentic
+**Traditional AI Chat Interfaces**
 
-- You ask, AI responds
-- No environment interaction
-- Passive assistance
-- Copy-paste workflow
+- Response generation only
+- No environment access
+- Manual implementation required
+- Text-based interaction
 :::
 
 ::: {.column width="50%"}
-## Agentic AI
-**Claude Code**
+### Agentic
+**Environment-Integrated AI**
 
-- AI takes actions in your environment
-- File system access and manipulation
-- Tool usage and automation
-- Active collaboration partner
+- Direct file system access
+- Tool execution capabilities
+- Automated task completion
+- Code modification abilities
 :::
 
 ::::
 
----
 
-# How Much Does It Cost?
+
+## What is Claude?
 
 :::: {.columns}
 
-::: {.column width="50%"}
-## API Per-Token Models
-**ChatGPT API, Claude API**
+::: {.column width="40%"}
+**Anthropic's large language model**
 
-- Pay per input/output token
-- Costs scale with usage
-- Unpredictable monthly bills
-- Expensive for large codebases
-- Claude 4 Sonnet costs 20x Gemini Flash
+- Advanced reasoning capabilities
+- Long context windows (200K+ tokens)
+- Multiple model tiers
+- Strong coding abilities
 :::
 
-::: {.column width="50%"}
-## Subscription Models
-**Claude Code, GitHub Copilot**
-
-- Fixed monthly cost ($20-60/month)
-- Unlimited usage within limits
-- Predictable budgeting
-- Better value for heavy development work
+::: {.column width="60%"}
+<div style="margin-left: 60px;">
+![](https://cdn.prod.website-files.com/657639ebfb91510f45654149/67cef0f7d6ebd0d81121f867_667f3b32d7ee7888bfcf1545_AD_4nXe7CoZkHH9uApvO2rMu6l3-gfoO2zYXtZ9CYwGOKXy9uCb8qOzj7Oaz0ounkqHNn27xhOH4C_ORh-6JNUYXFHu1iDph9pU02pb6QxzIqNQY4scKAj_bpeCZnArp9KRsWVnot8jlMsj5B2puKpn-4TYuAIvi.webp){width=100%}
+</div>
 :::
 
 ::::
 
----
 
-# How to Install Claude Code
 
-```bash
-# Simple installation process
-npm install -g @anthropic/claude-code
-
-# Authentication
-claude-code auth login
-
-# Start using in any project
-cd your-project
-claude-code
-```
-
-Quick setup, works immediately with your existing tools.
-
----
-
-# Why Terminal-Based? IDE Independence
-
-![](https://imgs.xkcd.com/comics/workflow.png)
+## Why Claude Code?
 
 :::: {.columns}
 
-::: {.column width="50%"}
-## Works with ANY IDE
-- VS Code, IntelliJ, Vim, Emacs
-- Sublime, Atom, whatever you use
-- No need to learn another IDE
-- Integrates with existing workflow
-:::
-
-::: {.column width="50%"}
-## Benefits
-- Lightweight and fast
-- Universal compatibility
-- No workflow disruption
-- Terminal-native automation
-:::
-
-::::
-
----
-
-# Live Demonstration: File Organization
-
-:::: {.columns}
-
-::: {.column width="50%"}
-## The Problem
-**Messy Notes Folder:**
-
-- Random filenames
-- Inconsistent extensions
-- No logical organization
-- Mixed content types
-
-*Sound familiar?*
-:::
-
-::: {.column width="50%"}
-## Claude Code Solution
-**Automated Organization:**
-
-- Analyze file contents
-- Create logical structure
-- Rename consistently
-- Organize by topic/date
-
-*5 minutes vs 5 hours*
-:::
-
-::::
-
----
-
-# The Copy-Paste Problem
-
+::: {.column width="40%"}
 ![](https://imgs.xkcd.com/comics/tech_support_cheat_sheet.png)
-
-:::: {.columns}
-
-::: {.column width="50%"}
-## Traditional AI Workflow
-1. Find the bug
-2. Copy code to ChatGPT
-3. Wait for response
-4. Copy solution back
-5. Test... it breaks
-6. Copy more context
-7. Repeat...
 :::
 
-::: {.column width="50%"}
-## The Issues
-- Context loss at each step
-- Manual copy-paste labor
-- Integration gaps
-- Scaling problems
-- "Google the program name plus keywords"
+::: {.column width="60%"}
+**Traditional AI Workflow:**
+
+Copy code → Paste to ChatGPT → Copy solution → Test → Breaks → Repeat...
+
+**Claude Code:**
+
+Direct file access, full project context, automated execution
+
+No more copy-paste. No more context loss.
 :::
 
 ::::
 
----
 
-# Automation Reality Check
 
-![](https://imgs.xkcd.com/comics/automation.png)
 
-**Theory:** Automation saves time by reducing repetitive work
-
-**Reality:** Programming the automation often takes longer than the original task
-
-**Claude Code Solution:** Pre-built automation that actually works
-
----
-
-# Competitive Landscape: Claude Code vs The Field
-
-:::: {.columns}
-
-::: {.column width="50%"}
-## Performance Metrics
-- **GitHub Copilot:** 55% faster task completion
-- **Cursor:** $9B valuation, excellent multi-file editing
-- **Claude Code:** Superior reasoning, unlimited daily use
-:::
-
-::: {.column width="50%"}
-## Key Differentiators
-- **Context awareness:** Full project understanding
-- **Cost predictability:** No surprise throttling
-- **Terminal integration:** Works with any setup
-- **Housekeeping automation:** Beyond just code
-:::
-
-::::
-
----
-
-# Is Your Automation Worth It?
-
-![](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
-
-Claude Code eliminates the "automation overhead" - you get productivity gains without the setup cost.
-
----
-
-# Claude Code: Productivity Multiplier
-
-**Documented Benefits:**
-- Direct file manipulation capabilities
-- Multi-file awareness and contextual intelligence
-- 3x productivity gains achievable with proper AI assistance
-
-**Real-World Impact:**
-- Refactor functions across 47 files in 5 minutes
-- Automated test generation and documentation
-- Consistent code quality enforcement
-
----
-
-# Advanced Housekeeping & Automation
-
-Beyond code generation:
-
-- **File organization at scale**
-  - Pattern recognition for consistent naming
-  - Bulk operations across multiple files
-  - Automated folder structure creation
-
-- **Project maintenance**
-  - Documentation generation and updates
-  - Code quality and consistency enforcement
-  - Dependency management and updates
-
----
-
-# The Power of Multi-File Context
+## The Power of Multi-File Context
 
 Traditional AI sees snippets. Claude Code sees your entire project:
 
-- **Understanding relationships** between files
-- **Cross-file dependencies** and imports
-- **Architectural patterns** and conventions
-- **Holistic refactoring** across the codebase
+- Understanding relationships between files
+- Cross-file dependencies and imports
+- Holistic refactoring across the codebase
 
-Example: Rename a function used in 47 files across 12 modules - Claude Code updates everything consistently.
+**Example:** Rename a function used in 47 files across 12 modules - Claude Code updates everything consistently.
 
----
 
-# Claude Code's Vision Scope
 
-```
-project-root/
-├── src/           ← Claude Code can see
-├── tests/         ← Claude Code can see
-├── docs/          ← Claude Code can see
-├── package.json   ← Claude Code can see
-└── ../other-projects/  ← Outside scope
-```
+## Claude Code: Productivity Multiplier
+
+**3x productivity gains with proper AI assistance**
+
+- Refactor functions across 47 files in 5 minutes
+- Full project context and multi-file awareness
+- Automated test generation and documentation
+- File organization, project maintenance, and housekeeping
+
+
+
+## Terminal-Based Architecture
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](https://imgs.xkcd.com/comics/workflow.png)
+:::
+
+::: {.column width="60%"}
+- Works with any editor: VS Code, IntelliJ, Vim, Emacs
+- Lightweight command-line interface
+- No IDE-specific plugins required
+- Preserves existing workflows
+:::
+
+::::
+
+
+
+## What Claude Code Sees {.smaller}
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-### What Claude Code Sees
 - **Full project context**
 - **All source files**
 - **Tests and documentation**
 - **Configuration files**
-:::
 
-::: {.column width="50%"}
 ### Security Benefits
 - **Project-root bounded access**
 - **No access to parent directories**
 - **Focused, relevant assistance**
 :::
 
+::: {.column width="50%"}
+<div style="font-size: 2em; text-align: left; margin-top: 120px;">
+```
+project-root/
+├── src/         ← Can see
+├── tests/       ← Can see
+├── docs/        ← Can see
+├── package.json ← Can see
+└── ../other/    ← Outside
+```
+</div>
+:::
+
 ::::
 
----
 
-# GitHub Integration Made Simple
 
+## GitHub Integration Made Simple
+
+:::: {.columns}
+
+::: {.column width="40%"}
 ![](https://imgs.xkcd.com/comics/git.png)
-
-No more "delete the project and download a fresh copy"
-
-**Claude Code handles:**
-- Meaningful commit message generation
-- Branch management and merging
-- Pull request creation with detailed descriptions
-- Issue tracking and project management
-
----
-
-# Enterprise & Team Benefits
-
-:::: {.columns}
-
-::: {.column width="50%"}
-### Security & Privacy
-- Project-scoped access only
-- No data sent outside project boundary
-- Enterprise-grade security controls
 :::
 
-::: {.column width="50%"}
-### Team Collaboration
-- Consistent code quality across team
-- Faster onboarding for new developers
-- Reduced technical debt accumulation
+::: {.column width="60%"}
+*Alternative to "delete the project and download a fresh copy"*
+
+**Git Operations:**
+- Commit message generation
+- Branch management
+- Pull request creation
+- Issue tracking integration
 :::
 
 ::::
 
-**Team Multiplier Effect:** Junior developers work at senior level, seniors focus on architecture.
 
----
 
-# Development Workflow Enhancement
+## Claude Code + GitHub Projects
 
-End-to-end development support:
+**Powerful project management synergies:**
 
-1. **Planning** - Architecture suggestions and decisions
-2. **Implementation** - Multi-file code generation
-3. **Testing** - Comprehensive test coverage
-4. **Documentation** - Automated docs and comments
-5. **Deployment** - Git operations and CI/CD
-6. **Maintenance** - Refactoring and updates
+- Automate issue creation from code analysis
+- Update project boards based on code changes
+- Generate sprint summaries from PRs and issues
+- Create technical tasks from high-level goals
+- Keep documentation in sync with project status
+- Interrogate commit history to recall what you were working on
 
-From idea to deployed feature, Claude Code handles the routine work.
 
----
 
-# Key Benefits Summary
+## Claude Code Pricing
 
 :::: {.columns}
 
-::: {.column width="33%"}
-### Productivity Multiplier
-- **3x faster** development
-- Reduced context switching
-- Automated routine tasks
+::: {.column width="50%"}
+### API Access
+**Pay per token**
+
+- $3-15 per million tokens
+- Variable monthly costs
+- Usage-dependent
 :::
 
-::: {.column width="33%"}
-### Context-Aware
-- Full project understanding
-- Consistent coding patterns
-- Relationship-aware refactoring
-:::
+::: {.column width="50%"}
+### Subscription
+**Fixed monthly fee**
 
-::: {.column width="33%"}
-### Integrated Workflow
-- IDE-independent
-- Git/GitHub automation
-- End-to-end support
+- Pro: $17-20/month
+- Team: $150/person/month
+- Predictable costs
 :::
 
 ::::
 
----
 
-# Thank You
 
-## Questions?
+## Installation Process
 
-**Claude Code: Your AI development partner**
+```bash
+# Install via npm
+npm install -g @anthropic/claude-code
 
-Ready to multiply your productivity while maintaining your preferred development environment.
+# Authenticate
+claude-code auth login
 
----
+# Initialize in project directory
+cd your-project
+claude-code
+```
+
+Standard command-line installation and setup.
+
+
+
+## Configuration & Customization
+
+**CLAUDE.md Files**
+
+Auto-loaded project instructions at repo root
+
+- Bash commands and testing instructions
+- Code style guidelines and repository etiquette
+- Developer environment setup
+
+**Terminal Settings**
+
+- `/terminal-setup` - Configure Shift+Enter for multiline
+- `/permissions` - Manage tool permissions
+- `/output-style` - Change interaction style
+
+
+
+## Interaction Modes
+
+**Press Shift+Tab to cycle through three modes:**
+
+**Default Mode**
+Claude suggests changes and waits for your permission
+
+**Auto-Accept Mode**
+Claude executes changes autonomously without waiting
+
+**Plan Mode**
+Claude creates a comprehensive plan without making any changes
+- Read-only research and analysis phase
+- Review the plan before execution
+- Accept with auto-edits or manual edits
+
+**Press Escape to interrupt Claude at any time**
+
+
+
+## Best Practices
+
+**Recommended Workflow:**
+
+1. Explain clearly the result you want
+2. Have Claude design unit tests
+3. Have it iteratively code and execute tests until it gets the result you described
+
+**Optimization Tips**
+
+- Be specific in instructions
+- Give Claude images and URLs for visual context
+- Course correct early
+- Use `/clear` to manage context for long sessions
+
+
+
+## Live Demo: File Organization
+
+**What we'll demonstrate:**
+
+1. Create new branch and switch to it
+2. Create GitHub issue: "organize notes"
+3. Use Claude Code to organize messy files
+4. Commit changes with Claude Code
+5. Push branch and open PR with Claude Code
+6. Merge PR with Claude Code
