@@ -3,6 +3,7 @@ title: "Claude Code"
 author: "Nate Layman"
 format:
   revealjs:
+    output-file: index.html
     theme: white
     transition: slide
     transition-speed: default
