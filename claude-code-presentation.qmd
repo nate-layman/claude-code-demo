@@ -1,15 +1,21 @@
 ---
 title: "Claude Code"
 subtitle: "The Developer Productivity Multiplier"
-author: "Your Name"
+author: "Nate Layman"
 format:
   revealjs:
-    theme: dark
+    theme: white
     transition: slide
     background-transition: fade
     highlight-style: github
     self-contained: true
     embed-resources: true
+---
+
+## Follow Along
+
+**Live Presentation:** https://nate-layman.github.io/claude-code-demo/claude-code-presentation.html
+
 ---
 
 # What is Claude?
@@ -124,20 +130,33 @@ Quick setup, works immediately with your existing tools.
 
 # Live Demonstration: File Organization
 
-## Real-World Example: Organizing Messy Notes
+:::: {.columns}
 
-Let's see Claude Code tackle a common housekeeping task:
+::: {.column width="50%"}
+## The Problem
+**Messy Notes Folder:**
 
-- Folder full of randomly named notes
-- Inconsistent file extensions
+- Random filenames
+- Inconsistent extensions
 - No logical organization
 - Mixed content types
 
-**Watch Claude Code automatically:**
+*Sound familiar?*
+:::
+
+::: {.column width="50%"}
+## Claude Code Solution
+**Automated Organization:**
+
 - Analyze file contents
-- Create logical folder structure
-- Rename files consistently
+- Create logical structure
+- Rename consistently
 - Organize by topic/date
+
+*5 minutes vs 5 hours*
+:::
+
+::::
 
 ---
 
@@ -260,17 +279,32 @@ Example: Rename a function used in 47 files across 12 modules - Claude Code upda
 # Claude Code's Vision Scope
 
 ```
-📁 project-root/
-├── ✅ src/ (Claude Code can see)
-├── ✅ tests/ (Claude Code can see)
-├── ✅ docs/ (Claude Code can see)
-├── ✅ package.json (Claude Code can see)
-└── ❌ ../other-projects/ (Outside scope)
+project-root/
+├── src/           ← Claude Code can see
+├── tests/         ← Claude Code can see
+├── docs/          ← Claude Code can see
+├── package.json   ← Claude Code can see
+└── ../other-projects/  ← Outside scope
 ```
 
-- **Project-root bounded access** for security
-- **Focused, relevant assistance** within your project
-- **Full context** without overwhelming scope
+:::: {.columns}
+
+::: {.column width="50%"}
+### What Claude Code Sees
+- **Full project context**
+- **All source files**
+- **Tests and documentation**
+- **Configuration files**
+:::
+
+::: {.column width="50%"}
+### Security Benefits
+- **Project-root bounded access**
+- **No access to parent directories**
+- **Focused, relevant assistance**
+:::
+
+::::
 
 ---
 
@@ -329,20 +363,30 @@ From idea to deployed feature, Claude Code handles the routine work.
 
 # Key Benefits Summary
 
-**Productivity Multiplier**
-- 3x faster development for complex tasks
-- Reduced context switching overhead
-- Automated routine operations
+:::: {.columns}
 
-**Context-Aware Assistance**
+::: {.column width="33%"}
+### Productivity Multiplier
+- **3x faster** development
+- Reduced context switching
+- Automated routine tasks
+:::
+
+::: {.column width="33%"}
+### Context-Aware
 - Full project understanding
 - Consistent coding patterns
 - Relationship-aware refactoring
+:::
 
-**Integrated Workflow Management**
-- Terminal-based, IDE-independent
-- Git and GitHub automation
-- End-to-end development support
+::: {.column width="33%"}
+### Integrated Workflow
+- IDE-independent
+- Git/GitHub automation
+- End-to-end support
+:::
+
+::::
 
 ---
 
