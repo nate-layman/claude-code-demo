@@ -358,6 +358,20 @@ Claude creates a comprehensive plan without making any changes
 
 
 
+## Best Practices
+
+**Recommended Workflow:**
+
+1. **Define the end state** - Specify what success looks like
+2. <span style="background-color: #ffffcc; padding: 4px 8px; display: inline-block; width: 100%;">**Create verification** - Design tests that prove success</span>
+3. <span style="background-color: #ffffcc; padding: 4px 8px; display: inline-block; width: 100%;">**Find the path** - Iteratively code until tests pass</span>
+
+<div style="margin-top: 40px; font-size: 1.5em; font-weight: bold;">
+Claude Code can do 2 and 3 for you!
+</div>
+
+
+
 ## Live Demo: File Organization
 
 **What we'll demonstrate:**
