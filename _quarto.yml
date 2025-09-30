@@ -1,13 +1,3 @@
 project:
-  type: website
+  type: default
   output-dir: _site
-
-website:
-  title: "Claude Code Presentation"
-  description: "The Developer Productivity Multiplier"
-
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true

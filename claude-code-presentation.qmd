@@ -358,17 +358,43 @@ Claude creates a comprehensive plan without making any changes
 
 
 
-## Best Practices
+## {.unlisted}
 
-**Recommended Workflow:**
+:::: {.columns}
 
-1. **Define the end state** - Specify what success looks like
-2. <span style="background-color: #ffffcc; padding: 4px 8px; display: inline-block; width: 100%;">**Create verification** - Design tests that prove success</span>
-3. <span style="background-color: #ffffcc; padding: 4px 8px; display: inline-block; width: 100%;">**Find the path** - Iteratively code until tests pass</span>
+::: {.column width="50%"}
+### Traditional Coding
+1. Write code
+2. Run manually
+3. Find bugs
+4. Fix issues
+5. Repeat
+:::
 
+::: {.column width="50%"}
+### Test-Driven Development
+1. Define expected outcome
+2. Write tests first
+3. **Iterate until tests pass**
+:::
+
+::::
+
+
+
+## Why Working Backwards Works
+
+**Similar to simulating data for power analysis:**
+
+1. Start with your expected model
+2. Generate data (or code) to fit the model
+3. Refine the approach
+
+::: {.fragment}
 <div style="margin-top: 40px; font-size: 1.5em; font-weight: bold;">
 Claude Code can do 2 and 3 for you!
 </div>
+:::
 
 
 
