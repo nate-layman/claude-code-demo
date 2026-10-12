@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Claude Code Demo"
+type: software
+date-released: 2026-10-12
+license: Apache-2.0
+repository-code: "https://github.com/nate-layman/claude-code-demo"
+authors:
+  - family-names: Layman
+    given-names: Nathan
+    affiliation: "University of Idaho"
+abstract: >-
+  Quarto presentation and setup guide for a Claude Code demonstration.
